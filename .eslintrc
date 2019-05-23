@@ -1,0 +1,134 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["airbnb"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["babel", "import", "react", "jsx-a11y", "better-styled-components"],
+  "rules": {
+    "better-styled-components/sort-declarations-alphabetically": 2,
+    "lines-between-class-members": 0,
+    "react/jsx-filename-extension": [
+      2,
+      {
+        "extensions": [".js"]
+      }
+    ],
+    "react/jsx-indent": [2, 2],
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-one-expression-per-line": [
+      2,
+      {
+        "allow": "single-child"
+      }
+    ],
+    "react/button-has-type": 0,
+    "react/self-closing-comp": [
+      2,
+      {
+        "component": true,
+        "html": false
+      }
+    ],
+    "react/no-unused-state": 1,
+    "react/jsx-curly-spacing": [
+      "warn",
+      {
+        "when": "never",
+        "children": {
+          "when": "always"
+        }
+      }
+    ],
+    "react/no-unescaped-entities": 0,
+    "react/display-name": 1,
+    "react/react-in-jsx-scope": 0,
+    "react/forbid-prop-types": 1,
+    "react/prop-types": 1,
+    "react/require-default-props": 0,
+    "react/destructuring-assignment": 0,
+    "jsx-quotes": [2, "prefer-single"],
+    "jsx-a11y/anchor-is-valid": 0,
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "func-names": 0,
+    "import/prefer-default-export": 0,
+    "import/newline-after-import": [
+      2,
+      {
+        "count": 2
+      }
+    ],
+    "semi": [2, "always"],
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "no-multiple-empty-lines": [
+      2,
+      {
+        "max": 2,
+        "maxEOF": 1,
+        "maxBOF": 1
+      }
+    ],
+    "no-underscore-dangle": 0,
+    "curly": [2, "multi", "consistent"],
+    "nonblock-statement-body-position": [2, "any"],
+    "one-var": 0,
+    "no-unused-vars": 1,
+    "arrow-parens": [2, "as-needed"],
+    "no-class-assign": 0,
+    "max-len": [
+      2,
+      100,
+      2,
+      {
+        "ignoreUrls": true
+      }
+    ],
+    "radix": "off",
+    "arrow-body-style": [2, "as-needed"],
+    "padded-blocks": 0,
+    "no-confusing-arrow": 2,
+    "space-before-function-paren": 0,
+    "linebreak-style": 0,
+    "no-shadow": [
+      2,
+      {
+        "hoist": "all",
+        "allow": ["resolve", "reject", "done", "next", "err", "error"]
+      }
+    ]
+  }
+}

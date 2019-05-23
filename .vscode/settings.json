@@ -1,0 +1,14 @@
+{
+  "files.eol": "\n",
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  // Disable vscode autosave
+  "editor.formatOnSave": false,
+
+  // eslint
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.enable": true,
+  "eslint.packageManager": "npm"
+}
